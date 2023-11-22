@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Ma SUPER COMMANDE !</title>
+    </head>
+
+    <body>
+        <div style="margin: auto;width: 20%;"></div>
+        <div style="margin: auto;width: 60%;">
+            <div style="margin: auto;width: 30%;"></div>
+            <form id="com" style="margin: auto;width: 50%;" method="post" action="./envoie.php"><div style="margin: auto;width: 20%;"></div>
+                <label for="pays">pays:</label><br>
+                <input type="text" id="pays" name="pays" value=" "><br>
+                <label for="cO2">CO2:</label><br>
+                <input type="text" id="cO2" name="cO2" value="0"><br>
+                <label for="typeBois">Type de bois:</label><br>
+                <select name="typeBois" id="typeBois">
+                    <option value="BOUL"> Bouleau </option>
+                    <option value="SAPI"> Sapin </option>
+                    <option value="SAPI"> Sapin de NOUWOUELLE ! </option>
+                    <option value="CHEN"> Chêne </option>
+                </select><br>
+                <label for="meuble">Planche</label><br>
+                <input type="checkbox" id="Planche" name="Planche" />
+                    <input type="text" name="PlancheNB" id="PlancheNB" /><br>
+                <label for="meuble">Table</label><br>
+                <input type="checkbox" id="Table" name="Table" />
+                    <input type="text" name="TableNB" id="TableNB" /><br>
+                <label for="Version">Version du logiciel:</label><br>
+                <input type="text" id="Version" name="Version" value="1" disabled><br><br>
+                <input id="envoie" type="submit" value="Submit">
+                
+            </form>
+            <div style="margin: auto;width: 20%;"></div>
+        </div>
+        <div style="margin: auto;width: 20%;"></div>
+    </body>
+</htlm>

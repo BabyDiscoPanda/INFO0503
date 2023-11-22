@@ -1,0 +1,13 @@
+Pour compiler (version Unix, il faut adapter les séparateurs pour Windows) :
+javac -d cls -cp lib/json.jar -sourcepath src src/ServeurHttp.java
+
+Pour executer (sous Unix) avec ou non un fichier json :
+java -cp cls/:lib/json.jar ServeurHttp
+
+Pour executer (sous Windows mais pas WSL) avec ou non un fichier json :
+java -cp "cls;lib\json.jar" TestJeuDeMots
+
+
+Pour générer la documentation (avec l'auteur, la version, les attributs privés et le lien vers la documentation de JAVA 21)
+javadoc -d doc -cp lib/json.jar -private -author -version -link https://docs.oracle.com/en/java/javase/21/docs/api/ -link http://stleary.github.io/JSON-java/ -sourcepath src/ src/TestJeuDeMots.java
+
